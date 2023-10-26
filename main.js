@@ -1,12 +1,17 @@
+var operators=['/','*','-','+'];
+
 function calculate(value){
   var result=document.getElementById("result");
-  //最後の１文字を取得
   var lastChar = result.value.slice(-1);
   
-  if((value==='/'||value==='*'||value==='-'||value==='+')&&(lastChar==='/'||lastChar==='*'||lastChar==='-'||lastChar==='+')||(value==='.'&&lastChar==='.')){
+  if((operators.includes(value)&&operators.includes(lastChar))||(value==='.'&& lastChar==='.')){
     return;
   }
-  result.value += value;
+  if(result.value==='0'&&value!=='.'){
+    result.value=value;
+  }else{
+    result.value += value;
+  }
 }
 
 function calculateResult(){
