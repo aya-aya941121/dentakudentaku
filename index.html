@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <link rel="stylesheet"href="main.css">
+    <title>電卓</title>
+  </head>
+  
+  <body>
+    <div class="calculator">
+    <div>
+     <input readonly id="result" type="text" value="">
+     <button onclick="clearResult()">C</button>
+    </div>
+    <div class="buttons">
+    <div>
+      <button onclick="calculate('7')">7</button>
+      <button onclick="calculate('8')">8</button>
+      <button onclick="calculate('9')">9</button>
+      <button onclick="calculate('/')">÷</button>
+    </div>
+    <div>
+      <button onclick="calculate('4')">4</button>
+      <button onclick="calculate('5')">5</button>
+      <button onclick="calculate('6')">6</button>
+      <button onclick="calculate('*')">×</button>
+    </div>
+    <div>
+      <button onclick="calculate('1')">1</button>
+      <button onclick="calculate('2')">2</button>
+      <button onclick="calculate('3')">3</button>
+      <button onclick="calculate('-')">-</button>
+    </div>
+    <div>
+      <button onclick="calculate('0')">0</button>
+      <button onclick="calculate('.')">.</button>
+      <button onclick="calculate('+')">+</button>
+      <button onclick="calculateResult('=')">=</button>
+    </div>
+    </div>
+    </div>
+    
+    <script src="main.js"></script>
+  </body>
+  
+</html>
