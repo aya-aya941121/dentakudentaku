@@ -1,4 +1,4 @@
-var operators=['/','*','-','+'];
+var operators=['/','*','-','+','.'];
 
 function calculate(value){
   var result=document.getElementById("result");
